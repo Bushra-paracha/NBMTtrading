@@ -10,7 +10,7 @@ export const Footer = () => (
         <div className="md:col-span-4">
           <img src={COMPANY.logo} alt="NBMT Trading Co." className="h-14 w-auto mb-6" />
           <p className="text-slate-300 leading-relaxed max-w-sm text-sm">
-            {COMPANY.name} is an independent Dubai based exporter of premium agricultural
+            {COMPANY.name} is an independent UAE based exporter of premium agricultural
             commodities, sourced with rigour and shipped worldwide with care.
           </p>
         </div>

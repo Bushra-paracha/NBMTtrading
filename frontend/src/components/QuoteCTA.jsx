@@ -14,7 +14,7 @@ export const QuoteCTA = ({ variant = "navy" }) => (
         <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
           <h2 className="lg:col-span-8 font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
             Ready to source premium commodities,{" "}
-            <span className="italic text-gold">direct from Dubai?</span>
+            <span className="italic text-gold">direct from the UAE?</span>
           </h2>
           <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3">
             <Link

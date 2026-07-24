@@ -23,7 +23,7 @@ export default function GlobalReach() {
               A truly <span className="italic text-gold">global footprint.</span>
             </h1>
             <p className="mt-6 text-slate-300 max-w-2xl leading-relaxed">
-              From our base in Dubai we ship premium rice, salt, wheat, corn and sesame seeds to buyers across the
+              From our base in the UAE we ship premium rice, salt, wheat, corn and sesame seeds to buyers across the
               world. Select a region on the map to explore the markets we serve.
             </p>
           </Reveal>

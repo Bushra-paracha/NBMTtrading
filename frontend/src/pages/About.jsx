@@ -7,7 +7,7 @@ import { QuoteCTA } from "../components/QuoteCTA";
 import { MARKETS } from "../data/markets";
 import { COMPANY } from "../config";
 
-const DUBAI_IMG = "https://images.pexels.com/photos/19612571/pexels-photo-19612571.jpeg?auto=compress&cs=tinysrgb&w=1400";
+const SKYLINE_IMG = "https://images.pexels.com/photos/19612571/pexels-photo-19612571.jpeg?auto=compress&cs=tinysrgb&w=1400";
 
 const DIRECTORS = [
   {
@@ -27,16 +27,16 @@ const DIRECTORS = [
 ];
 
 export default function About() {
-  useSeo("About", "Learn about NBMT Trading Co., an independent Dubai based exporter of premium agricultural commodities.");
+  useSeo("About", "Learn about NBMT Trading Co., an independent UAE based exporter of premium agricultural commodities.");
 
   return (
     <div>
       <PageHeader
         label="About NBMT"
-        title="An independent Dubai trading house,"
+        title="An independent UAE trading house,"
         accent="built on trust."
         description="We connect quality origins with buyers worldwide, backed by careful sourcing, rigorous quality control and dependable logistics."
-        image={DUBAI_IMG}
+        image={SKYLINE_IMG}
       />
 
       {/* OVERVIEW */}
@@ -54,7 +54,7 @@ export default function About() {
                 corn maize and natural white hulled sesame seeds, to international buyers.
               </p>
               <p>
-                Operating from Dubai, one of the world's foremost trading hubs, gives us the connectivity,
+                Operating from the UAE, one of the world's foremost trading hubs, gives us the connectivity,
                 banking infrastructure and logistics access to serve buyers efficiently across multiple regions.
                 Our focus is simple: consistent quality, honest documentation and shipments that arrive as agreed.
               </p>
@@ -62,7 +62,7 @@ export default function About() {
           </Reveal>
           <Reveal className="lg:col-span-5" delay={0.1}>
             <div className="aspect-[4/5] overflow-hidden bg-stone-alt">
-              <img src={DUBAI_IMG} alt="Dubai skyline" className="w-full h-full object-cover" />
+              <img src={SKYLINE_IMG} alt="Corporate skyline" className="w-full h-full object-cover" />
             </div>
           </Reveal>
         </div>
@@ -74,7 +74,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-black/10 border border-black/10">
             {[
               { icon: Target, title: "Our Mission", body: "To be the dependable link between quality origins and global buyers, delivering commodities that meet exacting standards, on time and as specified." },
-              { icon: Eye, title: "Our Vision", body: "To grow into a leading independent commodity trading house from Dubai, recognised for integrity, quality and long standing partnerships." },
+              { icon: Eye, title: "Our Vision", body: "To grow into a leading independent commodity trading house from the UAE, recognised for integrity, quality and long standing partnerships." },
               { icon: Compass, title: "Our Values", body: "Transparency in every transaction, uncompromising quality control, and a service ethic that treats each buyer as a long term partner." },
             ].map((c, i) => (
               <Reveal key={i} delay={i * 0.05}>

@@ -27,20 +27,20 @@ const STATS = [
   { value: "6", label: "Commodity Ranges" },
   { value: "20+", label: "Markets Served" },
   { value: "FOB", label: "& CIF Worldwide" },
-  { value: "Dubai", label: "United Arab Emirates" },
+  { value: "UAE", label: "Head Office" },
 ];
 
 const STORY = [
   { icon: Factory, title: "Rigorous Sourcing", body: "We select from trusted origins and vet every consignment for quality, purity and consistency before it carries our name." },
   { icon: ShieldCheck, title: "Certified Quality", body: "Every shipment can be supported by SGS or Bureau Veritas inspection, with documentation prepared to your market's requirements." },
-  { icon: Globe2, title: "Global Reach", body: "From our base in Dubai we supply importers, distributors and re-exporters across the Gulf, Africa, Asia and Europe." },
+  { icon: Globe2, title: "Global Reach", body: "From our base in the UAE we supply importers, distributors and re-exporters across the Gulf, Africa, Asia and Europe." },
   { icon: Ship, title: "Reliable Logistics", body: "FOB and CIF terms to all major ports, with careful packing and transparent timelines on every order." },
 ];
 
 export default function Home() {
   useSeo(
     "Premium Agricultural Commodity Exporter",
-    "NBMT Trading Co. is a Dubai based exporter of premium rice, salt, wheat, corn and sesame seeds to buyers worldwide."
+    "NBMT Trading Co. is a UAE based exporter of premium rice, salt, wheat, corn and sesame seeds to buyers worldwide."
   );
   const [updates, setUpdates] = useState([]);
 
@@ -59,7 +59,7 @@ export default function Home() {
         <div className="relative max-w-[1400px] mx-auto px-6 md:px-12 pb-20 pt-40 w-full text-stone-warm">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}>
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-8xl leading-[0.95] tracking-tight max-w-5xl">
-              Premium agricultural commodities, <span className="italic text-gold">exported from Dubai.</span>
+              Premium agricultural commodities, <span className="italic text-gold">exported worldwide.</span>
             </h1>
             <p className="mt-8 text-lg text-slate-200 max-w-2xl leading-relaxed">
               {COMPANY.name} sources and supplies basmati and non-basmati rice, Himalayan and edible salt,
@@ -140,7 +140,7 @@ export default function Home() {
                 Sourced with rigour. <span className="italic text-gold">Shipped with care.</span>
               </h2>
               <p className="mt-6 text-lg text-slate-700 leading-relaxed">
-                As an independent Dubai trading house, our reputation rests on the integrity of every consignment.
+                As an independent UAE trading house, our reputation rests on the integrity of every consignment.
                 We work only with vetted origins, verify quality at each stage and prepare documentation to suit
                 your market, so that what arrives at your port is exactly what was agreed.
               </p>
@@ -189,7 +189,7 @@ export default function Home() {
                 Trusted by buyers across <span className="italic text-gold">many markets.</span>
               </h2>
               <p className="mt-6 text-slate-300 leading-relaxed">
-                From our base in Dubai we serve importers, distributors and re-exporters across the Gulf,
+                From our base in the UAE we serve importers, distributors and re-exporters across the Gulf,
                 Africa, Asia, Europe and the Americas.
               </p>
               <Link to="/global-reach" className="group mt-8 inline-flex items-center gap-2 border border-gold/40 text-gold px-6 py-3 font-semibold hover:bg-gold hover:text-navy transition-colors">

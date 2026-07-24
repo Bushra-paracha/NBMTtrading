@@ -12,7 +12,7 @@ const emailOk = (e) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
 const field = "w-full bg-white border border-black/15 px-4 py-3 text-navy placeholder:text-slate-400 focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold transition-colors";
 
 export default function Contact() {
-  useSeo("Contact", "Get in touch with NBMT Trading Co. in Dubai for enquiries and partnerships.");
+  useSeo("Contact", "Get in touch with NBMT Trading Co. in the UAE for enquiries and partnerships.");
   const [form, setForm] = useState({ name: "", email: "", company: "", phone: "", message: "" });
   const [errors, setErrors] = useState({});
   const [sending, setSending] = useState(false);
@@ -51,7 +51,7 @@ export default function Contact() {
         label="Contact"
         title="Let us start a"
         accent="conversation."
-        description="Reach our trading desk in Dubai. We respond to serious enquiries promptly."
+        description="Reach our trading desk in the UAE. We respond to serious enquiries promptly."
       />
 
       <section className="max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-24">
