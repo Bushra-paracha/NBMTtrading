@@ -10,9 +10,11 @@ export const CATEGORIES = [
 ];
 
 const RICE_IMG = "https://images.pexels.com/photos/36346840/pexels-photo-36346840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200";
-const RICE_IMG2 = "https://images.pexels.com/photos/7665442/pexels-photo-7665442.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200";
+const RICE_IMG2 = "https://images.pexels.com/photos/7851798/pexels-photo-7851798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200";
 const WHITE_RICE = "https://images.pexels.com/photos/6086556/pexels-photo-6086556.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200";
+const BROKEN_RICE = "https://images.pexels.com/photos/8108170/pexels-photo-8108170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200";
 const SALT_IMG = "https://images.pexels.com/photos/9974508/pexels-photo-9974508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200";
+const REFINED_SALT = "https://images.pexels.com/photos/7779878/pexels-photo-7779878.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200";
 const WHEAT_IMG = "https://images.pexels.com/photos/54084/wheat-grain-agriculture-seed-54084.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200";
 const CORN_IMG = "https://images.pexels.com/photos/30204262/pexels-photo-30204262.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200";
 const SESAME_IMG = "https://images.pexels.com/photos/7420888/pexels-photo-7420888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200";
@@ -117,7 +119,7 @@ export const PRODUCTS = [
     slug: "parboiled-non-basmati-rice",
     name: "Parboiled Non-Basmati Rice",
     category: "non-basmati",
-    image: WHITE_RICE,
+    image: BROKEN_RICE,
     short: "Golden parboiled rice with excellent cooking yield.",
     description:
       "Our parboiled non-basmati rice is partially boiled in the husk to retain nutrients and improve texture. It offers a firm, separate grain and high cooking yield preferred by institutional buyers.",
@@ -156,7 +158,7 @@ export const PRODUCTS = [
     slug: "refined-edible-white-salt",
     name: "Refined Edible White Salt",
     category: "salt",
-    image: SALT_IMG,
+    image: REFINED_SALT,
     short: "Refined, free flowing white salt for food use.",
     description:
       "Refined edible white salt with consistent grain size and high purity, suitable for table use, food processing and industrial applications.",

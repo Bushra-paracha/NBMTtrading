@@ -12,7 +12,7 @@ import { GALLERY } from "../data/gallery";
 import { CREDENTIALS, COMPANY } from "../config";
 import api, { resolveImage } from "../lib/api";
 
-const HERO_IMG = "https://images.unsplash.com/photo-1605745341112-85968b19335b?auto=format&fit=crop&w=1920&q=80";
+const HERO_IMG = "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1920&q=80";
 
 const CATEGORY_IMAGES = {
   basmati: "https://images.pexels.com/photos/36346840/pexels-photo-36346840.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -229,7 +229,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <Reveal>
             <div className="aspect-[4/3] overflow-hidden bg-stone-alt">
-              <img src="https://images.pexels.com/photos/4498136/pexels-photo-4498136.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Private label packing" className="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1775259608525-cf332eaf89d3?auto=format&fit=crop&w=1200&q=80" alt="Private label packing" className="w-full h-full object-cover" />
             </div>
           </Reveal>
           <Reveal delay={0.1}>

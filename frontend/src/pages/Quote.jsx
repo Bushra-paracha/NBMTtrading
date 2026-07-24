@@ -61,7 +61,7 @@ export default function Quote() {
         title="Tell us what you need,"
         accent="we will price it."
         description="Share your product, quantity and destination. Our trading desk will respond with a competitive offer and packing options."
-        image="https://images.unsplash.com/photo-1605745341112-85968b19335b?auto=format&fit=crop&w=1400&q=80"
+        image="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1400&q=80"
       />
 
       <section className="max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-24">
