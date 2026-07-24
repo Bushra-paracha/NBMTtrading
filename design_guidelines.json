@@ -1,0 +1,123 @@
+{
+  "brand_identity": {
+    "company_name": "NBMT Trading Co.",
+    "location": "Dubai, UAE",
+    "theme_strategy": "Light theme is primary. A premium corporate marketing site needs trust, high legibility, and cleanliness. We will use a warm off-white (stone) background with deep navy text, and gold/brass accents."
+  },
+  "typography": {
+    "headings": {
+      "family": "Cormorant Garamond, serif",
+      "weights": ["400", "500", "600"],
+      "usage": "H1, H2, H3, featured numbers. Use italic display accents for emphasis. Tracking tight for larger sizes."
+    },
+    "body": {
+      "family": "Manrope, sans-serif",
+      "weights": ["300", "400", "500", "600"],
+      "usage": "Body text, small caps labels, UI elements."
+    },
+    "scale": {
+      "h1": "text-5xl sm:text-6xl lg:text-7xl tracking-tight leading-none",
+      "h2": "text-4xl sm:text-5xl tracking-tight",
+      "h3": "text-2xl sm:text-3xl",
+      "body": "text-base sm:text-lg leading-relaxed text-slate-700",
+      "labels": "text-xs tracking-[0.2em] uppercase font-semibold text-slate-500"
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#FAF9F6",
+      "secondary": "#F5F5F0",
+      "card": "#FFFFFF"
+    },
+    "text": {
+      "primary": "#0B132B",
+      "secondary": "#475569",
+      "muted": "#94A3B8"
+    },
+    "accent": {
+      "primary": "#C5A059",
+      "hover": "#B38F4D",
+      "subtle": "rgba(197, 160, 89, 0.1)"
+    },
+    "ui": {
+      "border": "#E2E8F0",
+      "divider": "#CBD5E1",
+      "navy_surface": "#0B132B"
+    }
+  },
+  "visual_enhancers": {
+    "borders": "Hairline dividers, 1px borders with low opacity for separation.",
+    "shadows": "Extremely subtle, diffuse ambient shadows. Avoid heavy uniform drop shadows.",
+    "corners": "Sharp, precise corners (rounded-none). Flat understated cards.",
+    "spacing": "Generous white space. 2-3x typical spacing (e.g., py-24, gap-16).",
+    "icons": "Lucide React only. Stroke width 1.5, simple and elegant. NO EMOJIS anywhere.",
+    "punctuation": "Natural punctuation (no em-dashes)."
+  },
+  "layouts": {
+    "editorial": "Asymmetric editorial layouts. Combine large imagery with offset text blocks.",
+    "bento_grid": "Use high density grids for product listings and data. E.g., grid-cols-1 md:grid-cols-2 lg:grid-cols-3.",
+    "containers": "Max width max-w-7xl with generous horizontal padding (px-6 md:px-12).",
+    "admin_dashboard": "Clean, dense, utilitarian. Sidebar navigation with top header. Contrasts with the airy marketing site by utilizing more functional space."
+  },
+  "components": {
+    "buttons": "Sharp corners (rounded-none), full solid for primary (navy background, white text or gold background), keyline/outline for secondary. Add group-hover arrow micro-interactions.",
+    "cards": "Flat, background #FFFFFF, sharp corners, 1px border. Soft hover state: slight lift (-translate-y-1) and soft shadow.",
+    "inputs": "Shadcn based. Sharp corners, clean borders, minimal focus rings.",
+    "navigation": "Solid background or heavy glassmorphism (backdrop-blur-xl bg-white/90) with sharp bottom border. Sticky on scroll. Must include 'Request a Quote' CTA.",
+    "sticky_action_bar": "Mobile only. Fixed bottom bar with WhatsApp and Request Quote buttons.",
+    "floating_whatsapp": "Fixed position bottom right floating button for easy contact."
+  },
+  "motion": {
+    "scroll": "Smooth scroll reveals using Framer Motion (fade up, slow duration 0.8s).",
+    "interactions": "Restrained micro-interactions. Button hover background shifts, image slow zoom on card hover.",
+    "loading": "Clean, minimal line loaders or text fades."
+  },
+  "3d_libraries": {
+    "map": "Use 'react-simple-maps' or 'react-globe.gl' for the interactive Global Reach world map, styled in navy and gold. No heavy 3d unless it serves a purpose."
+  },
+  "image_urls": {
+    "hero_logistics": {
+      "url": "https://images.unsplash.com/photo-1605745341112-85968b19335b",
+      "description": "Cargo ship in port, conveying global logistics and shipping capability."
+    },
+    "dubai_office": {
+      "url": "https://images.pexels.com/photos/19612571/pexels-photo-19612571.jpeg",
+      "description": "Modern Dubai corporate skyline for About section and credibility."
+    },
+    "product_basmati_rice": {
+      "url": "https://images.pexels.com/photos/7665442/pexels-photo-7665442.jpeg",
+      "description": "High quality macro of white rice grains."
+    },
+    "product_himalayan_salt": {
+      "url": "https://images.unsplash.com/photo-1683944433023-027a3f443ae4",
+      "description": "Pink Himalayan salt and related wellness setup."
+    },
+    "product_wheat": {
+      "url": "https://images.pexels.com/photos/10383335/pexels-photo-10383335.jpeg",
+      "description": "Golden wheat field."
+    },
+    "product_corn_maize": {
+      "url": "https://images.pexels.com/photos/35193657/pexels-photo-35193657.jpeg",
+      "description": "Yellow corn kernels."
+    },
+    "product_sesame_seeds": {
+      "url": "https://images.pexels.com/photos/3338502/pexels-photo-3338502.jpeg",
+      "description": "Fresh uncooked sesame seeds."
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure text over images has dark gradient overlay (bg-black/40). Navy on Stone has >7:1 contrast.",
+    "testing": "All interactive elements MUST have data-testid attributes (e.g., data-testid='request-quote-button').",
+    "motion": "Respect prefers-reduced-motion in animations."
+  },
+  "universal_guidelines_for_main_agent": [
+    "You tend to converge toward generic, 'on distribution' outputs. Make this site feel like a premium, established Dubai trading firm (like a luxury editorial piece combined with a high-end corporate brochure).",
+    "Do NOT use emojis anywhere in the UI. Use Lucide-react for all iconography.",
+    "Do NOT center align large blocks of text. Left-align for an editorial feel.",
+    "Use generous whitespace. Avoid cramped grids.",
+    "Ensure all interactive elements have data-testid attributes.",
+    "Never use fully transparent backgrounds on sticky headers. Always use solid or heavily blurred glassmorphism with bottom borders.",
+    "For the Admin Dashboard, ensure it is clean, dense, and functional, contrasting with the airy marketing site.",
+    "Remember to stick to .js files for React components if .js is standard for the setup."
+  ]
+}
