@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowUpRight, ArrowRight, ShieldCheck, Ship, Package, Globe2, Factory, Award } from "lucide-react";
+import { ArrowUpRight, ArrowRight, ShieldCheck, Ship, Package, Globe2, Factory } from "lucide-react";
 import { useSeo } from "../lib/useSeo";
 import { Reveal, Label } from "../components/Reveal";
 import { QuoteCTA } from "../components/QuoteCTA";
@@ -9,7 +9,7 @@ import { ProductCard } from "../components/ProductCard";
 import { CATEGORIES, PRODUCTS, FEATURED_SLUGS, getProduct } from "../data/products";
 import { MARKETS } from "../data/markets";
 import { GALLERY } from "../data/gallery";
-import { CREDENTIALS, COMPANY } from "../config";
+import { COMPANY } from "../config";
 import api, { resolveImage } from "../lib/api";
 
 const HERO_IMG = "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1920&q=80";
@@ -58,8 +58,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/70 to-navy/30" />
         <div className="relative max-w-[1400px] mx-auto px-6 md:px-12 pb-20 pt-40 w-full text-stone-warm">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}>
-            <Label className="!text-gold">Dubai, United Arab Emirates</Label>
-            <h1 className="mt-8 font-serif text-5xl sm:text-6xl lg:text-8xl leading-[0.95] tracking-tight max-w-5xl">
+            <h1 className="font-serif text-5xl sm:text-6xl lg:text-8xl leading-[0.95] tracking-tight max-w-5xl">
               Premium agricultural commodities, <span className="italic text-gold">exported from Dubai.</span>
             </h1>
             <p className="mt-8 text-lg text-slate-200 max-w-2xl leading-relaxed">
@@ -89,18 +88,6 @@ export default function Home() {
               <p className="mt-2 keyline !text-slate-400">{s.label}</p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* CREDIBILITY STRIP */}
-      <section data-testid="credibility-strip" className="bg-stone-alt border-b border-black/10">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-10">
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
-            <span className="keyline flex items-center gap-2"><Award className="w-4 h-4 text-gold" strokeWidth={1.5} /> Quality Assured</span>
-            {CREDENTIALS.map((c) => (
-              <span key={c} className="font-serif text-xl md:text-2xl text-navy/80">{c}</span>
-            ))}
-          </div>
         </div>
       </section>
 
