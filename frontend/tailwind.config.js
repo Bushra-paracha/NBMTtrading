@@ -75,6 +75,25 @@ module.exports = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out'
+      },
+      fontFamily: {
+        serif: ['"Cormorant Garamond"', 'serif'],
+        sans: ['Manrope', 'sans-serif']
+      },
+      colors: {
+        navy: {
+          DEFAULT: '#0B132B',
+          light: '#131c3a',
+          soft: '#1b264f'
+        },
+        gold: {
+          DEFAULT: '#C5A059',
+          dark: '#B38F4D'
+        },
+        stone: {
+          warm: '#FAF9F6',
+          alt: '#F5F5F0'
+        }
       }
     }
   },
