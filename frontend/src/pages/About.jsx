@@ -13,14 +13,14 @@ const DIRECTORS = [
   {
     name: "Muhammad Ali Piracha",
     title: "Director",
-    image: "https://images.unsplash.com/photo-1718209881007-c0ecdfc00f9d?crop=entropy&cs=srgb&fm=jpg&q=85&w=800",
+    image: "https://images.unsplash.com/photo-1659353220482-554773c2f7fa?crop=entropy&cs=srgb&fm=jpg&q=85&w=800",
     message:
       "Mr. Muhammad Ali is a mechanical engineer by profession. After gaining experience as an engineer, he joined the company as a director. With significant knowledge of processing units, banking procedures and both domestic and international markets, he oversees the company's exports.",
   },
   {
     name: "Sultan Ali Piracha",
     title: "Director",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=srgb&fm=jpg&q=85&w=800",
+    image: "https://images.unsplash.com/photo-1723990720514-65968a7d517b?crop=entropy&cs=srgb&fm=jpg&q=85&w=800",
     message:
       "Mr. Sultan Ali is a dynamic personality with vast experience in the commodities export sector. Well versed in the costing strategies for raw and processed goods and the sales process, he serves as the focal point of contact for local and international buyers.",
   },
