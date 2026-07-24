@@ -24,7 +24,6 @@ export const NAV_LINKS = [
   { label: "About", to: "/about" },
   { label: "Products", to: "/products" },
   { label: "Global Reach", to: "/global-reach" },
-  { label: "Certificates", to: "/certificates" },
   { label: "Gallery", to: "/gallery" },
   { label: "Updates", to: "/updates" },
   { label: "Catalogs", to: "/catalogs" },

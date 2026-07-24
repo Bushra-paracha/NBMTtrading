@@ -9,7 +9,6 @@ import About from "./pages/About";
 import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import GlobalReach from "./pages/GlobalReach";
-import Certificates from "./pages/Certificates";
 import Gallery from "./pages/Gallery";
 import Updates from "./pages/Updates";
 import UpdateDetail from "./pages/UpdateDetail";
@@ -31,7 +30,6 @@ function AppRouter() {
         <Route path="/products" element={<Products />} />
         <Route path="/products/:slug" element={<ProductDetail />} />
         <Route path="/global-reach" element={<GlobalReach />} />
-        <Route path="/certificates" element={<Certificates />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/updates" element={<Updates />} />
         <Route path="/updates/:slug" element={<UpdateDetail />} />

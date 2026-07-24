@@ -1,16 +1,14 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Inbox, Newspaper, Award, LogOut, ArrowLeft, Loader2, ShieldCheck } from "lucide-react";
+import { Inbox, Newspaper, LogOut, ArrowLeft, Loader2, ShieldCheck } from "lucide-react";
 import { useAuth } from "../../context/AuthContext";
 import { COMPANY } from "../../config";
 import { EnquiriesPanel } from "./EnquiriesPanel";
 import { UpdatesPanel } from "./UpdatesPanel";
-import { CertificatesPanel } from "./CertificatesPanel";
 
 const TABS = [
   { id: "enquiries", label: "Enquiries", icon: Inbox },
   { id: "updates", label: "Updates", icon: Newspaper },
-  { id: "certificates", label: "Certificates", icon: Award },
 ];
 
 const AdminLogin = () => {
@@ -95,7 +93,6 @@ export default function Admin() {
         <div className="max-w-6xl">
           {tab === "enquiries" && <EnquiriesPanel />}
           {tab === "updates" && <UpdatesPanel />}
-          {tab === "certificates" && <CertificatesPanel />}
         </div>
       </main>
     </div>
