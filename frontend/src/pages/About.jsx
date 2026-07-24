@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight, Target, Eye, Compass, Building2 } from "lucide-react";
+import { ArrowUpRight, Target, Eye, Compass, Building2, Quote } from "lucide-react";
 import { useSeo } from "../lib/useSeo";
 import { Reveal, Label } from "../components/Reveal";
 import { PageHeader } from "../components/PageHeader";
@@ -8,6 +8,23 @@ import { MARKETS } from "../data/markets";
 import { COMPANY } from "../config";
 
 const DUBAI_IMG = "https://images.pexels.com/photos/19612571/pexels-photo-19612571.jpeg?auto=compress&cs=tinysrgb&w=1400";
+
+const DIRECTORS = [
+  {
+    name: "Muhammad Ali Piracha",
+    title: "Director",
+    image: "https://images.unsplash.com/photo-1718209881007-c0ecdfc00f9d?crop=entropy&cs=srgb&fm=jpg&q=85&w=800",
+    message:
+      "Mr. Muhammad Ali is a mechanical engineer by profession. After gaining experience as an engineer, he joined the company as a director. With significant knowledge of processing units, banking procedures and both domestic and international markets, he oversees the company's exports.",
+  },
+  {
+    name: "Sultan Ali Piracha",
+    title: "Director",
+    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=srgb&fm=jpg&q=85&w=800",
+    message:
+      "Mr. Sultan Ali is a dynamic personality with vast experience in the commodities export sector. Well versed in the costing strategies for raw and processed goods and the sales process, he serves as the focal point of contact for local and international buyers.",
+  },
+];
 
 export default function About() {
   useSeo("About", "Learn about NBMT Trading Co., an independent Dubai based exporter of premium agricultural commodities.");
@@ -69,6 +86,42 @@ export default function About() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* LEADERSHIP */}
+      <section data-testid="leadership" className="max-w-[1400px] mx-auto px-6 md:px-12 py-24 md:py-32">
+        <Reveal>
+          <Label>Leadership</Label>
+          <div className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+            <h2 className="lg:col-span-7 font-serif text-4xl sm:text-5xl tracking-tight leading-[1.05]">
+              A message from <span className="italic text-gold">our directors.</span>
+            </h2>
+            <p className="lg:col-span-5 text-slate-700 leading-relaxed">
+              Our business is built on relationships. We value long term partnerships and provide personalised
+              service, tailor made solutions and competitive pricing to every buyer.
+            </p>
+          </div>
+        </Reveal>
+
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8">
+          {DIRECTORS.map((d, i) => (
+            <Reveal key={d.name} delay={i * 0.08}>
+              <div className="group bg-white border border-black/10 h-full flex flex-col sm:flex-row">
+                <div className="sm:w-2/5 aspect-square sm:aspect-auto overflow-hidden bg-stone-alt shrink-0">
+                  <img src={d.image} alt={d.name} loading="lazy" className="img-zoom w-full h-full object-cover" />
+                </div>
+                <div className="p-7 flex flex-col justify-center">
+                  <Quote className="w-7 h-7 text-gold" strokeWidth={1.2} />
+                  <p className="mt-4 text-sm text-slate-600 leading-relaxed">{d.message}</p>
+                  <div className="mt-5 pt-4 border-t border-black/10">
+                    <p className="font-serif text-2xl text-navy leading-tight">{d.name}</p>
+                    <p className="keyline mt-1">{d.title}</p>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+          ))}
         </div>
       </section>
 

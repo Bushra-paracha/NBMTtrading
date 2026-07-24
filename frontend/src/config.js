@@ -5,7 +5,7 @@ export const COMPANY = {
   shortName: "NBMT",
   location: "Dubai, UAE",
   tagline: "Premium agricultural commodities, sourced with rigour and exported with care.",
-  address: "Business Bay, Dubai, United Arab Emirates",
+  address: "Business Centre, Sharjah Publishing City Free Zone, Sharjah, United Arab Emirates",
   phone: "+92 32 427245",
   phoneRaw: "+9232427245",
   whatsapp: "923008201074",
